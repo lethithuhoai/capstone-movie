@@ -55,6 +55,7 @@ export const RegisterTemplate = () => {
         placeholder="Mật khẩu"
         id="matKhau"
         name="matKhau"
+        type="password"
         error={errors?.matKhau?.message}
         register={register}
       />
