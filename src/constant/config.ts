@@ -1,4 +1,6 @@
 export const PATH = {
-    login: '/login',
-    register: '/register',
-}
+  login: "/login",
+  register: "/register",
+  account: "/account",
+  movieBooking: "/movie-booking",
+};

@@ -1,5 +1,6 @@
 :root {
   --header-height: 80px;
-  --primary-color: #fff;
+  --max-width: 1536px;
+  --primary-color: #e50914;
   --secondary-color: #111;
 }

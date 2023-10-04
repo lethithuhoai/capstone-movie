@@ -7,6 +7,7 @@ import { LoginSchema, LoginSchematype } from "schema";
 import { RootState, useAppDispatch } from "store";
 import { loginThunk } from "store/quanLyNguoiDung";
 import { toast } from "react-toastify";
+import { handleError } from "utils";
 
 export const LoginTemplate = () => {
   const {
@@ -32,7 +33,10 @@ export const LoginTemplate = () => {
         toast.success("Đăng nhập thành công");
         navigate("/");
       })
-      .catch(() => {});
+      .catch((err) => {
+        // xử lý action thất bại
+        handleError(err);
+      });
   };
   console.log("test");
   return (
